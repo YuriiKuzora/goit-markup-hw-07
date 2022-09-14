@@ -1,0 +1,38 @@
+.caption .slogan {
+   margin-bottom: 50px;
+}
+
+.slogan-list {
+   display: flex;
+   column-gap: 30px;
+}
+
+.slogan-list-item {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 170px;
+   height: 91px;
+
+   background-color: var(--background-color-white);
+   border: 1px solid var(--border-coption-color);
+   border-radius: 4px;
+}
+
+.slogan-list-item:hover,
+.slogan-list-item:focus {
+   border: 1px solid var(--button-color);
+   transition: var(--transition-animacion);
+}
+
+.slogan-list-icon {
+   width: 106px;
+   height: 59.35px;
+   fill: var(--color-icon);
+}
+
+.slogan-list-item:hover .slogan-list-icon,
+.slogan-list-item:focus .slogan-list-icon {
+   fill: var(--button-color);
+   transition: var(--transition-animacion);
+}

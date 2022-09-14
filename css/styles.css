@@ -84,24 +84,26 @@ body {
 
 /* ?Header */
 
-.page-header {
+/* .page-header {
    border-bottom: 1px solid var(--border-header-color);
 }
 
-.main-nav {
+.page-header-nav {
    align-items: center;
    display: flex;
    padding-top: 0;
    justify-content: space-between;
 }
 
-.flex-nav {
-   display: flex;
-   justify-content: center;
-   align-items: center;
+.logo-web {
+   font-family: 'Raleway';
+   font-weight: 700;
+   font-size: 26px;
+   line-height: 1.19;
+   color: var(--button-color);
 }
 
-.accent {
+.logo-black {
    margin-right: 93px;
 
    font-family: 'Raleway';
@@ -111,17 +113,17 @@ body {
    color: var(--accent-color);
 }
 
-/* ?Список навигации */
-
-.logo {
-   font-family: 'Raleway';
-   font-weight: 700;
-   font-size: 26px;
-   line-height: 1.19;
-   color: var(--button-color);
+.main-nav {
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
-.nav .item:not(:last-child) {
+.main-nav-list {
+   display: flex;
+}
+
+.main-nav-list:not(:last-child) {
    margin-right: 50px;
 }
 
@@ -132,10 +134,7 @@ body {
    line-height: 1.14;
    letter-spacing: 0.02em;
    color: var(--text-color-black);
-   /* transition-property: color;
-   transition-duration: 250ms;
-   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
-   position: relative;
+position: relative;
 }
 
 .site-nav.current::after {
@@ -155,21 +154,16 @@ body {
    color: var(--button-color);
 }
 
-/* ?Контакты */
-.item {
-   display: flex;
-}
-
 .contact {
    margin-left: auto;
    display: flex;
 }
 
-.contact .item:not(:last-child) {
+.contact-list:not(:last-child) {
    margin-right: 50px;
 }
 
-.contact-link-item {
+.contact-list-link {
    display: flex;
    font-weight: 500;
    line-height: 1.14;
@@ -186,22 +180,22 @@ body {
 
 .site-nav:hover,
 .site-nav:focus,
-.contact-link-item:hover,
-.contact-link-item:focus {
+.contact-list-link:hover,
+.contact-list-link:focus {
    color: var(--button-color);
    transition: var(--transition-animacion);
 }
 
-.contact-link-item:hover .contact-list-icon,
-.contact-link-item:focus .contact-list-icon {
+.contact-list-link:hover .contact-list-icon,
+.contact-list-link:focus .contact-list-icon {
    fill: var(--button-color);
    transition: var(--transition-animacion);
 }
 
-
+*/
 /* ?Section 1 */
 
-.title {
+/* .title {
    padding: 200px 0px;
    align-items: center;
    text-align: center;
@@ -214,8 +208,6 @@ body {
    margin-left: auto;
    margin-right: auto;
 }
-
-.title-fons {}
 
 .title .subtitle {
    max-width: 696px;
@@ -254,11 +246,11 @@ body {
    line-height: 1.87;
    text-align: center;
    color: var(--text-color-white);
-}
+} */
 
 /* ?Section 2 */
 
-.subject {
+/* .subject {
    background-color: var(--background-color-white);
    padding-bottom: 0px;
 }
@@ -317,11 +309,11 @@ body {
 .subject .desc {
    line-height: 1.71;
    color: var(--text-color-silver);
-}
+} */
 
 /* ?Section 3 */
 
-.gallery {
+/* .gallery {
    display: flex;
 }
 
@@ -350,11 +342,11 @@ body {
    line-height: 1.14;
    color: var(--text-color-white);
    text-transform: uppercase;
-}
+} */
 
 /* ?Section 4 */
 
-.heading {
+/* .heading {
    background-color: var(--heading-background-color);
 }
 
@@ -424,11 +416,11 @@ body {
 .social-list-user-link:focus .social-list-icon {
    fill: var(--text-color-white);
    transition: var(--transition-animacion);
-}
+} */
 
 /* ?Section 5 */
 
-.caption .slogan {
+/* .caption .slogan {
    margin-bottom: 50px;
 }
 
@@ -465,11 +457,11 @@ body {
 .slogan-list-item:focus .slogan-list-icon {
    fill: var(--button-color);
    transition: var(--transition-animacion);
-}
+} */
 
 /* ?Footer */
 
-.footer {
+/* .footer {
    display: flex;
    background-color: var(--background-color-fond);
    padding-top: 60px;
@@ -492,7 +484,7 @@ body {
    margin-bottom: 20px;
 }
 
-.footer .accent {
+.footer .logo-white {
    font-family: 'Raleway';
    font-weight: 700;
    font-size: 26px;
@@ -521,8 +513,6 @@ body {
    letter-spacing: 0.03em;
    color: rgba(255, 255, 255, 0.6);
 }
-
-/* ?Приєднуйся */
 
 .footer-web-contact-sign-up {
    display: flex;
@@ -559,9 +549,6 @@ body {
    background-color: var(--button-color);
    transition: var(--transition-animacion);
 }
-
-
-/* ?Підпишіться на розсилку */
 
 .footer-form {
    display: flex;
@@ -606,11 +593,11 @@ body {
 .footer-form-submit-icon {
    width: 24px;
    height: 24px;
-}
+} */
 
 /* ?Portfolio */
 
-.gallery-items {
+/* .gallery-items {
    display: flex;
    flex-wrap: wrap;
 }
@@ -702,7 +689,6 @@ body {
    color: var(--text-color-silver);
 }
 
-/* ?ПЕРЕХОДИ ТА АНІМАЦІЯ */
 
 .gallery-items-overlay {
    position: relative;
@@ -734,10 +720,11 @@ body {
 .items-shadow:focus .overlay {
    transform: translateY(0%);
    transition: var(--transition-animacion);
-}
+} */
 
 /* ?Модальне вікно */
-.backdrop {
+
+/* .backdrop {
    position: fixed;
    top: 0;
    left: 0;
@@ -787,8 +774,6 @@ body {
    fill: var(--button-color);
    transition: opacity var(--transition-animacion);
 }
-
-/* ?Форми(модальне вікно) */
 
 .modal-form-title {
    font-weight: 700;
@@ -937,4 +922,4 @@ body {
    letter-spacing: 0.06em;
    color: var(--text-color-white);
    margin: 0px auto;
-}
+} */

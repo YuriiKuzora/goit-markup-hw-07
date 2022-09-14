@@ -1,0 +1,52 @@
+.title {
+   padding: 200px 0px;
+   align-items: center;
+   text-align: center;
+   background-color: var(--background-color-fond-hero);
+   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/fon/Img-fon.jpg");
+   background-repeat: no-repeat;
+
+   max-width: 1600px;
+   height: 600px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.title .subtitle {
+   max-width: 696px;
+   margin-left: auto;
+   margin-right: auto;
+   margin-bottom: 30px;
+   font-weight: 900;
+   line-height: 1.36;
+   letter-spacing: 0.06em;
+   text-transform: uppercase;
+   font-size: 44px;
+   text-align: center;
+   color: var(--text-color-white);
+}
+
+.title-fons .button {
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   font-family: Roboto;
+   width: 216px;
+   height: 50px;
+   background-color: var(--button-color);
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+   border-radius: 4px;
+   letter-spacing: 0.06em;
+   border: none;
+}
+
+.button-text {
+   display: flex;
+   justify-content: center;
+   text-align: center;
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 1.87;
+   text-align: center;
+   color: var(--text-color-white);
+}
