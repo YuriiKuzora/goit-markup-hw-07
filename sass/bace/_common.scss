@@ -1,0 +1,33 @@
+h1,
+h2,
+h3,
+p {
+   margin-top: 0px;
+   margin-bottom: 0px;
+}
+
+ul,
+ol {
+   margin-top: 0px;
+   margin-bottom: 0px;
+   padding-left: 0px;
+   list-style: none;
+}
+
+button {
+   cursor: pointer;
+}
+
+img {
+   display: block;
+   max-width: 100%;
+   height: auto;
+}
+
+body {
+   background-color: var(--background-color-white);
+   color: var(--text-color-black);
+   font-family: Roboto, sans-serif;
+   font-size: 14px;
+   letter-spacing: 0.03em;
+}

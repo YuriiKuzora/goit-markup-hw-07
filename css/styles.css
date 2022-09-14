@@ -1,4 +1,4 @@
-:root {
+/* :root {
    --background-color-fond-hero: #C4C4C4;
    --background-color-white: #ffffff;
    --background-color-fond: #2F303A;
@@ -15,17 +15,9 @@
    --color-icon: #AFB1B8;
    --transition-animacion: 250ms cubic-bezier(0.4, 0, 0.2, 1);
    --modal-butoon: #188CE8;
-}
+} */
 
-body {
-   background-color: var(--background-color-white);
-   color: var(--text-color-black);
-   font-family: Roboto, sans-serif;
-   font-size: 14px;
-   letter-spacing: 0.03em;
-}
-
-h1,
+/* h1,
 h2,
 h3,
 p {
@@ -51,32 +43,35 @@ img {
    height: auto;
 }
 
-.link {
-   text-decoration: none;
-}
+body {
+   background-color: var(--background-color-white);
+   color: var(--text-color-black);
+   font-family: Roboto, sans-serif;
+   font-size: 14px;
+   letter-spacing: 0.03em;
+} */
 
-.container {
+/* .section {
+   padding-top: 94px;
+   padding-bottom: 94px;
+} */
+
+/* .link {
+   text-decoration: none;
+} */
+
+/* .container {
    width: 1200px;
    margin-left: auto;
    margin-right: auto;
    padding-left: 15px;
    padding-right: 15px;
-}
+} */
 
-.section {
-   padding-top: 94px;
-   padding-bottom: 94px;
-}
 
-.slogan {
-   text-align: center;
-   margin-bottom: 50px;
-   font-weight: 700;
-   font-size: 36px;
-   line-height: 1.16;
-}
 
-.visually-hidden {
+
+/* .visually-hidden {
    position: absolute;
    width: 1px;
    height: 1px;
@@ -85,7 +80,7 @@ img {
    overflow: hidden;
    border: 0;
    clip: rect(0 0 0 0);
-}
+} */
 
 /* ?Header */
 
@@ -300,6 +295,14 @@ img {
    font-weight: 700;
    line-height: 1.14;
    text-transform: uppercase;
+}
+
+.slogan {
+   text-align: center;
+   margin-bottom: 50px;
+   font-weight: 700;
+   font-size: 36px;
+   line-height: 1.16;
 }
 
 .subject .slogan {
