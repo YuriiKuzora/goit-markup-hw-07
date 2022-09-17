@@ -17,6 +17,12 @@
   --modal-butoon: #188CE8;
 }
 
+.modal-form-check-field, .modal-close-btn, .overlay, .slogan-list-item, .social-list-user-link, .button-text, .main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -105,12 +111,6 @@ body {
   font-size: 26px;
   line-height: 1.19;
   color: var(--accent-color);
-}
-
-.main-nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .main-nav-list {
@@ -222,9 +222,6 @@ body {
 }
 
 .button-text {
-  display: flex;
-  justify-content: center;
-  text-align: center;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -348,9 +345,6 @@ body {
 }
 
 .social-list-user-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -377,9 +371,6 @@ body {
 }
 
 .slogan-list-item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 170px;
   height: 91px;
   background-color: var(--background-color-white);
@@ -407,7 +398,7 @@ body {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.footer.logo-white {
+.footer .logo-white {
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
@@ -621,9 +612,6 @@ body {
   height: 101%;
   width: 100%;
   overflow: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 24px;
   transform: translateY(100%);
   transition: transform 250ms linear;
@@ -670,9 +658,6 @@ body {
   position: absolute;
   top: 8px;
   right: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -793,9 +778,6 @@ body {
 }
 
 .modal-form-check-field {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   line-height: 1.17;
   color: var(--text-color-silver);
   margin-bottom: 30px;

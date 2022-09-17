@@ -33,9 +33,7 @@
    position: absolute;
    top: 8px;
    right: 8px;
-   display: flex;
-   align-items: center;
-   justify-content: center;
+   @extend %center;
    width: 30px;
    height: 30px;
    border-radius: 50%;
@@ -165,9 +163,7 @@
 }
 
 .modal-form-check-field {
-   display: flex;
-   justify-content: center;
-   align-items: center;
+   @extend %center;
 
    line-height: 1.17;
    color: var(--text-color-silver);

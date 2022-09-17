@@ -4,9 +4,7 @@
 }
 
 .slogan-list-item {
-   display: flex;
-   align-items: center;
-   justify-content: center;
+   @extend %center;
    width: 170px;
    height: 91px;
 

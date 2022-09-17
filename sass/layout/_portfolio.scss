@@ -103,9 +103,7 @@
    height: 101%;
    width: 100%;
    overflow: auto;
-   display: flex;
-   justify-content: center;
-   align-items: center;
+   @extend %center;
    padding: 24px;
    transform: translateY(100%);
    transition: transform 250ms linear;
