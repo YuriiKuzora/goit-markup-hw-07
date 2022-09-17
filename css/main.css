@@ -247,6 +247,10 @@ body {
   line-height: 1.14;
   text-transform: uppercase;
 }
+.subject .desc {
+  line-height: 1.71;
+  color: var(--text-color-silver);
+}
 
 .flex-block {
   display: flex;
@@ -274,19 +278,6 @@ body {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
-}
-
-.subject .slogan {
-  text-align: center;
-  margin-bottom: 50px;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-}
-
-.subject .desc {
-  line-height: 1.71;
-  color: var(--text-color-silver);
 }
 
 .gallery {
@@ -378,10 +369,6 @@ body {
 .social-list-user-link:hover .social-list-icon, .social-list-user-link:focus .social-list-icon {
   fill: var(--text-color-white);
   transition: var(--transition-animacion);
-}
-
-.caption .slogan {
-  margin-bottom: 50px;
 }
 
 .slogan-list {
