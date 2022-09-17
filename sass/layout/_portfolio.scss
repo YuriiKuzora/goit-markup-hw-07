@@ -25,9 +25,7 @@
       width: auto;
       height: 38px;
       border-radius: 4px;
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 1.62;
+      @include font(16px, 500, 26px);
       letter-spacing: 0.06em;
       border: none;
    }
@@ -64,9 +62,7 @@
    }
 
    & .slogan {
-      font-weight: 700;
-      font-size: 18px;
-      line-height: 2;
+      @include font(18px, 36px);
       letter-spacing: 0.06em;
       margin-bottom: 4px;
       text-align: left;

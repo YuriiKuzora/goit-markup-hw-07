@@ -1,9 +1,7 @@
 .slogan {
    text-align: center;
    margin-bottom: 50px;
-   font-weight: 700;
-   font-size: 36px;
-   line-height: 1.16;
+   @include font($fs: 36px, $lh: 42px);
 }
 
 .gallery {
@@ -30,9 +28,7 @@
    bottom: 0;
    background-color: rgba(47, 48, 58, 0.8);
 
-   font-weight: 700;
-   font-size: 14px;
-   line-height: 1.14;
+   @include font($lh: 16px);
    color: var(--text-color-white);
    text-transform: uppercase;
 }
