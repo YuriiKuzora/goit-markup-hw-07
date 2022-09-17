@@ -1,6 +1,20 @@
 .subject {
    background-color: var(--background-color-white);
    padding-bottom: 0px;
+
+   & .section:last-child {
+      padding-bottom: 0px;
+   }
+
+   & .subtitle {
+      margin-top: 30px;
+      margin-bottom: 10px;
+
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 1.14;
+      text-transform: uppercase;
+   }
 }
 
 .flex-block {
@@ -23,19 +37,19 @@
    height: 70px;
 }
 
-.subject .section:last-child {
-   padding-bottom: 0px;
-}
+// .subject .section:last-child {
+//    padding-bottom: 0px;
+// }
 
-.subject .subtitle {
-   margin-top: 30px;
-   margin-bottom: 10px;
+// .subject .subtitle {
+//    margin-top: 30px;
+//    margin-bottom: 10px;
 
-   font-size: 14px;
-   font-weight: 700;
-   line-height: 1.14;
-   text-transform: uppercase;
-}
+//    font-size: 14px;
+//    font-weight: 700;
+//    line-height: 1.14;
+//    text-transform: uppercase;
+// }
 
 .slogan {
    text-align: center;

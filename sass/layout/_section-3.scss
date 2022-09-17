@@ -5,10 +5,10 @@
 .imeg {
    position: relative;
    margin-right: 30px;
-}
 
-.imeg:last-child {
-   margin-right: 0;
+   &:last-child {
+      margin-right: 0;
+   }
 }
 
 .box {

@@ -1,39 +1,39 @@
 .heading {
    background-color: var(--heading-background-color);
-}
 
-.heading .user {
-   background: var(--background-color-white);
-   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-   border-radius: 0px 0px 4px 4px;
-   margin-right: 30px;
-}
+   & .user {
+      background: var(--background-color-white);
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+      border-radius: 0px 0px 4px 4px;
+      margin-right: 30px;
+   }
 
-.heading .user:last-child {
-   margin-right: 0px;
+   & .user:last-child {
+      margin-right: 0px;
+   }
+
+   & .subtitle {
+      text-align: center;
+
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 1.18;
+   }
+
+   & .desc {
+      text-align: center;
+      margin-top: 10px;
+      margin-bottom: 16px;
+
+      font-size: 16px;
+      line-height: 1.18;
+      color: var(--text-color-silver);
+   }
 }
 
 .user-contact {
    padding-top: 30px;
    padding-bottom: 30px;
-}
-
-.heading .subtitle {
-   text-align: center;
-
-   font-weight: 500;
-   font-size: 16px;
-   line-height: 1.18;
-}
-
-.heading .desc {
-   text-align: center;
-   margin-top: 10px;
-   margin-bottom: 16px;
-
-   font-size: 16px;
-   line-height: 1.18;
-   color: var(--text-color-silver);
 }
 
 .social-list {
@@ -50,22 +50,23 @@
    height: 44px;
    border-radius: 50%;
    background-color: var(--background-color-white);
-}
 
-.social-list-user-link:hover,
-.social-list-user-link:focus {
-   background-color: var(--button-color);
-   transition: var(--transition-animacion);
+   &:hover,
+   &:focus {
+      background-color: var(--button-color);
+      transition: var(--transition-animacion);
+
+   }
 }
 
 .social-list-icon {
    width: 20px;
    height: 20px;
    fill: var(--color-icon);
-}
 
-.social-list-user-link:hover .social-list-icon,
-.social-list-user-link:focus .social-list-icon {
-   fill: var(--text-color-white);
-   transition: var(--transition-animacion);
+   .social-list-user-link:hover &,
+   .social-list-user-link:focus & {
+      fill: var(--text-color-white);
+      transition: var(--transition-animacion);
+   }
 }
