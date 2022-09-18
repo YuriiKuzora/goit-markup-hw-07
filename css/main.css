@@ -17,7 +17,7 @@
   --modal-butoon: #188CE8;
 }
 
-.modal-form-check-field, .modal-close-btn, .overlay, .slogan-list-item, .social-list-user-link, .button-text, .main-nav {
+.modal-form__check-field, .modal__close-btn, .overlay, .slogan-list-item, .social-list-user-link, .button__text, .main-nav {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -52,6 +52,15 @@ ol {
 
 button {
   cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 50px;
+  background-color: var(--button-color);
+  letter-spacing: 0.06em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
 }
 
 img {
@@ -96,7 +105,7 @@ body {
   justify-content: space-between;
 }
 
-.logo-web {
+.logo {
   font-family: "Raleway";
   font-size: 26px;
   font-weight: 700;
@@ -104,7 +113,7 @@ body {
   color: var(--button-color);
 }
 
-.logo-black {
+.logo__black {
   margin-right: 93px;
   font-family: "Raleway";
   font-size: 26px;
@@ -113,14 +122,14 @@ body {
   color: var(--accent-color);
 }
 
-.main-nav-list {
+.main-nav__list {
   display: flex;
 }
-.main-nav-list:not(:last-child) {
+.main-nav__list:not(:last-child) {
   margin-right: 50px;
 }
 
-.site-nav {
+.main-nav__link {
   padding-top: 32px;
   padding-bottom: 32px;
   font-weight: 500;
@@ -129,10 +138,10 @@ body {
   color: var(--text-color-black);
   position: relative;
 }
-.site-nav.current {
+.main-nav__link.current {
   color: var(--button-color);
 }
-.site-nav.current::after {
+.main-nav__link.current::after {
   position: absolute;
   content: "";
   display: block;
@@ -144,7 +153,7 @@ body {
   background-color: var(--button-color);
   border-radius: 2px;
 }
-.site-nav:hover, .site-nav:focus {
+.main-nav__link:hover, .main-nav__link:focus {
   fill: var(--button-color);
   transition: var(--transition-animacion);
 }
@@ -154,34 +163,34 @@ body {
   display: flex;
 }
 
-.contact-list:not(:last-child) {
+.contact__list:not(:last-child) {
   margin-right: 50px;
 }
 
-.contact-list-link {
+.contact__list_link {
   display: flex;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--text-color-silver);
 }
-.contact-list-link:hover, .contact-list-link:focus {
+.contact__list_link:hover, .contact__list_link:focus {
   color: var(--button-color);
   transition: var(--transition-animacion);
 }
 
-.contact-list-icon {
+.contact__list_icon {
   width: 16px;
   height: 16px;
   margin-right: 10px;
   fill: var(--text-color-silver);
 }
-.contact-list-link:hover .contact-list-icon, .contact-list-link:focus .contact-list-icon {
+.contact__list_link:hover .contact__list_icon, .contact__list_link:focus .contact__list_icon {
   fill: var(--button-color);
   transition: var(--transition-animacion);
 }
 
-.title {
+.hero {
   padding: 200px 0px;
   align-items: center;
   text-align: center;
@@ -193,7 +202,7 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-.title .subtitle {
+.hero .hero__subtitle {
   max-width: 696px;
   margin-left: auto;
   margin-right: auto;
@@ -207,21 +216,12 @@ body {
   color: var(--text-color-white);
 }
 
-.title-fons .button {
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+.hero__fons .button_hero {
   font-family: Roboto;
   width: 216px;
-  height: 50px;
-  background-color: var(--button-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  letter-spacing: 0.06em;
-  border: none;
 }
 
-.button-text {
+.button__text {
   font-size: 16px;
   font-weight: 700;
   line-height: 1.875;
@@ -398,7 +398,7 @@ body {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.footer .logo-white {
+.footer .logo__white {
   font-family: "Raleway";
   font-size: 26px;
   font-weight: 700;
@@ -532,9 +532,6 @@ body {
   justify-content: center;
 }
 .list .button {
-  justify-content: center;
-  align-items: center;
-  text-align: center;
   font-family: Roboto;
   margin-right: 8px;
   margin-bottom: 50px;
@@ -542,12 +539,9 @@ body {
   background-color: var(--heading-background-color);
   width: auto;
   height: 38px;
-  border-radius: 4px;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.625;
-  letter-spacing: 0.06em;
-  border: none;
 }
 .list .button:hover, .list .button:focus {
   background-color: var(--button-color);
@@ -654,7 +648,7 @@ body {
   padding: 40px;
 }
 
-.modal-close-btn {
+.modal__close-btn {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -665,12 +659,12 @@ body {
   background-color: transparent;
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
-.modal-close-btn:focus, .modal-close-btn:hover {
+.modal__close-btn:focus, .modal__close-btn:hover {
   fill: var(--button-color);
   transition: opacity var(--transition-animacion);
 }
 
-.modal-form-title {
+.modal__form-title {
   font-size: 20px;
   font-weight: 700;
   line-height: 1.15;
@@ -683,11 +677,11 @@ body {
   flex-direction: column;
 }
 
-.modal-form-field {
+.modal-form__field {
   margin-bottom: 10px;
 }
 
-.modal-form-fiald-desc {
+.modal-form__fiald-desc {
   display: block;
   font-size: 12px;
   line-height: 1.17;
@@ -696,7 +690,7 @@ body {
   margin-bottom: 4px;
 }
 
-.modal-form-input {
+.modal-form__input {
   width: 100%;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -704,17 +698,17 @@ body {
   padding-left: 42px;
   transition: border-color var(--transition-animacion);
 }
-.modal-form-input:focus {
+.modal-form__input:focus {
   border: 1px solid var(--button-color);
   outline: none;
 }
 
-.modal-form-input-wrapper {
+.modal-form__input-wrapper {
   position: relative;
   display: block;
 }
 
-.modal-form-input-icon {
+.modal-form__input-icon {
   display: block;
   position: absolute;
   top: 50%;
@@ -722,11 +716,11 @@ body {
   transform: translateY(-50%);
   transition: background-color var(--transition-animacion);
 }
-.modal-form-input:focus + .modal-form-input-icon {
+.modal-form__input:focus + .modal-form__input-icon {
   fill: var(--button-color);
 }
 
-.modal-form-message {
+.modal-form__message {
   width: 100%;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -736,18 +730,18 @@ body {
   resize: none;
   transition: border-color var();
 }
-.modal-form-message::placeholder {
+.modal-form__message::placeholder {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
-.modal-form-message:focus {
+.modal-form__message:focus {
   outline: none;
   border-color: var(--button-color);
 }
 
-.modal-form-checkbox-icon {
+.modal-form__checkbox-icon {
   width: 16px;
   height: 15px;
   background-color: var(--background-color-white);
@@ -756,28 +750,28 @@ body {
   cursor: pointer;
   margin-right: 7px;
 }
-.modal-form-check:checked + .modal-form-checkbox-icon {
+.modal-form__check:checked + .modal-form__checkbox-icon {
   background-color: var(--button-color);
   border-radius: 4px;
   border: solid 2px var(--button-color);
 }
-.modal-form-check:focus + .modal-form-checkbox-icon {
+.modal-form__check:focus + .modal-form__checkbox-icon {
   border: solid 2px var(--button-color);
   border-radius: 4px;
 }
 
-.modal-form-checkbox-icon-on {
+.modal-form__checkbox-icon-on {
   display: none;
   width: 11px;
   height: 8px;
   margin-right: 7px;
 }
-.modal-form-check:checked + .modal-form-checkbox-icon .modal-form-checkbox-icon-on {
+.modal-form__check:checked + .modal-form__checkbox-icon .modal-form__checkbox-icon-on {
   display: block;
   transition: var(--transition-animacion);
 }
 
-.modal-form-check-field {
+.modal-form__check-field {
   line-height: 1.17;
   color: var(--text-color-silver);
   margin-bottom: 30px;
@@ -792,17 +786,10 @@ body {
 .modal-form-submit,
 .footer-form-submit {
   width: 200px;
-  height: 50px;
   background-color: var(--modal-butoon);
-  border: none;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
   font-size: 16px;
   font-weight: 700;
   line-height: 1.875;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
   color: var(--text-color-white);
   margin: 0px auto;
 }/*# sourceMappingURL=main.css.map */

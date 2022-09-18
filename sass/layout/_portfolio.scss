@@ -13,9 +13,6 @@
    }
 
    & .button {
-      justify-content: center;
-      align-items: center;
-      text-align: center;
       font-family: Roboto;
       margin-right: 8px;
       margin-bottom: 50px;
@@ -24,10 +21,7 @@
       background-color: var(--heading-background-color);
       width: auto;
       height: 38px;
-      border-radius: 4px;
       @include font(16px, 500, 26px);
-      letter-spacing: 0.06em;
-      border: none;
    }
 
    & .button:hover,
