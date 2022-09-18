@@ -6,7 +6,7 @@
 
    .logo-white {
       font-family: 'Raleway';
-      @include font(26px, 31px);
+      @include font(26px, 700, 31px);
       color: var(--text-color-white);
    }
 }
@@ -56,7 +56,7 @@
 
 .web-contact-list,
 .sign-up-text {
-   @include font($lh: 16px);
+   @include font();
    text-transform: uppercase;
    color: var(--text-color-white);
    margin-bottom: 20px;

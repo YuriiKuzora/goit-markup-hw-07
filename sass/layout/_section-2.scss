@@ -10,7 +10,7 @@
       margin-top: 30px;
       margin-bottom: 10px;
 
-      @include font($lh: 16px);
+      @include font();
       text-transform: uppercase;
    }
 

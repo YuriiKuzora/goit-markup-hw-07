@@ -28,7 +28,7 @@
    bottom: 0;
    background-color: rgba(47, 48, 58, 0.8);
 
-   @include font($lh: 16px);
+   @include font();
    color: var(--text-color-white);
    text-transform: uppercase;
 }

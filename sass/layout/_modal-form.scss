@@ -49,7 +49,7 @@
 }
 
 .modal-form-title {
-   @include font(20px, 23px);
+   @include font(20px, 700, 23px);
    text-align: center;
    margin-bottom: 12px;
 }
@@ -183,7 +183,7 @@
    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
    border-radius: 4px;
 
-   @include font(16px, 30px);
+   @include font(16px, 700, 30px);
    align-items: center;
    text-align: center;
    letter-spacing: 0.06em;

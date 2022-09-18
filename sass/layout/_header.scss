@@ -11,7 +11,7 @@
 
 .logo-web {
    font-family: 'Raleway';
-   @include font(26px, 31px);
+   @include font(26px, 700, 31px);
    color: var(--button-color);
 }
 
@@ -19,7 +19,7 @@
    margin-right: 93px;
 
    font-family: 'Raleway';
-   @include font(26px, 31px);
+   @include font(26px, 700, 31px);
    color: var(--accent-color);
 }
 

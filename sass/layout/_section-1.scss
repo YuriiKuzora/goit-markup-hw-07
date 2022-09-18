@@ -41,7 +41,7 @@
 
 .button-text {
    @extend %center;
-   @include font(16px, 30px);
+   @include font(16px, 700, 30px);
    text-align: center;
    color: var(--text-color-white);
 }
